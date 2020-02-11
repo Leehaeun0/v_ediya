@@ -1,0 +1,18 @@
+/* .nav__content__btn {
+    display: none;
+} */
+.nav__content__list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    float: right;
+    margin: 22px;
+}
+.nav__content__item {
+    display: inline-block;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.nav__content__item a {
+    display: block;
+}
