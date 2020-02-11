@@ -26,7 +26,7 @@
         <!-- Navigation -->
         <nav class="navigation nav__content">
             <h2 class="hidden">이디야의 카테고리</h2>
-            <a role="button" href="/" title="메뉴 열기" class="boxReset nav__content__btn navBtn">
+            <a role="button" href="/" title="메뉴 열기" class="nav__content__btn boxReset navBtn">
                 <div class="btn__nav">
                     <span class="btn__top"></span>
                     <span class="btn__middle"></span>
@@ -69,7 +69,7 @@
                         </figure>
                     </a>
                      <!-- Detail -->
-                    <div class="main__item__detail itemAct">
+                    <div class="main__item__detail itemAct" hidden>
                         <h3 class="hidden">ICED 벚꽃라떼 상세보기</h3>
                         <!--  -->
                         <div class="main__item__info">
@@ -106,33 +106,28 @@
                         </figure>
                     </a>
                     <div class="main__item--active main__item__detail isAct">
-                        <h3 class="a11y-hidden">HOT 벚꽃라떼 상세보기</h3>
-                        <dl class="main__item__info">
-                            <dt class="item__info__title">HOT 벚꽃라떼</dt>
-                            <dt class="item__info__enTitle">Cherry Blossom Latte</dt>
-                            <dd class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                        <h3 class="hidden">HOT 벚꽃라떼 상세보기</h3>
+                        <div class="main__item__info">
+                            <strong class="item__info__title">HOT 벚꽃라떼
+                                <span class="item__info__enTitle">Cherry Blossom Latte</span>
+                            </strong>
+                            <p class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</p>
+                        </div>
+                        <dl class="main__item__healthInfo">
+                            <dt>칼로리</dt>
+                            <dd>(430kcal)</dd>
+                            <dt>포화지방</dt>
+                            <dd>(19.0g)</dd>
+                            <dt>당류</dt>
+                            <dd>(38g)</dd>
+                            <dt>나트륨</dt>
+                            <dd>(190mg)</dd>
+                            <dt>단백질</dt>
+                            <dd>(10g)</dd>
+                            <dt>카페인</dt>
+                            <dd>(0mg)</dd>
                         </dl>
-                        <table class="main__item__healthInfo">
-                            <tr>
-                                <th>칼로리</th>
-                                <td>(430kcal)</td>
-                                <th>포화지방</th>
-                                <td>(19.0g)</td>
-                            </tr>
-                            <tr>
-                                <th>당류</th>
-                                <td>(38g)</td>
-                                <th>나트륨</th>
-                                <td>(190mg)</td>
-                            </tr>
-                            <tr>
-                                <th>단백질</th>
-                                <td>(10g)</td>
-                                <th>카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </table>
-                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                        <button class="main__item__btn btnClose" type="button">메뉴 상세보기 닫기</button>
                     </div>
                 </li>
                 <!-- Item - ICED 브라우니 쇼콜라 -->
@@ -144,33 +139,28 @@
                         </figure>
                     </a>
                     <div class="main__item--active main__item__detail isAct">
-                        <h3 class="a11y-hidden">ICED 브라우니 쇼콜라 상세보기</h3>
-                        <dl class="main__item__info">
-                            <dt class="item__info__title">ICED 브라우니 쇼콜라</dt>
-                            <dt class="item__info__enTitle">Brownie Chocolate</dt>
-                            <dd class="item__info__text">깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료</dd>
+                        <h3 class="hidden">ICED 브라우니 쇼콜라 상세보기</h3>
+                        <div class="main__item__info">
+                            <strong class="item__info__title">ICED 브라우니 쇼콜라
+                                <span class="item__info__enTitle">Brownie Chocolate</span>
+                            </strong>
+                            <p class="item__info__text">깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료</p>
+                        </div>
+                        <dl class="main__item__healthInfo">
+                            <dt>칼로리</dt>
+                            <dd>(503kcal)</dd>
+                            <dt>포화지방</dt>
+                            <dd>(20.8g)</dd>
+                            <dt>당류</dt>
+                            <dd>(42g)</dd>
+                            <dt>나트륨</dt>
+                            <dd>(262mg)</dd>
+                            <dt>단백질</dt>
+                            <dd>(9g)</dd>
+                            <dt>카페인</dt>
+                            <dd>(12mg)</dd>
                         </dl>
-                        <table class="main__item__healthInfo">
-                            <tr>
-                                <th>칼로리</th>
-                                <td>(503kcal)</td>
-                                <th>포화지방</th>
-                                <td>(20.8g)</td>
-                            </tr>
-                            <tr>
-                                <th>당류</th>
-                                <td>(42g)</td>
-                                <th>나트륨</th>
-                                <td>(262mg)</td>
-                            </tr>
-                            <tr>
-                                <th>단백질</th>
-                                <td>(9g)</td>
-                                <th>카페인</th>
-                                <td>(12mg)</td>
-                            </tr>
-                        </table>
-                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                        <button class="main__item__btn btnClose" type="button">메뉴 상세보기 닫기</button>
                     </div>
                 </li>
                 <!-- Item - HOT 브라우니 쇼콜라 -->
@@ -182,33 +172,28 @@
                         </figure>
                     </a>
                     <div class="main__item--active main__item__detail isAct">
-                        <h3 class="a11y-hidden">HOT 브라우니 쇼콜라 상세보기</h3>
-                        <dl class="main__item__info">
-                            <dt class="item__info__title">HOT 브라우니 쇼콜라</dt>
-                            <dt class="item__info__enTitle">Brownie Chocolate</dt>
-                            <dd class="item__info__text">깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료</dd>
+                        <h3 class="hidden">HOT 브라우니 쇼콜라 상세보기</h3>
+                         <div class="main__item__info">
+                            <strong class="item__info__title">HOT 브라우니 쇼콜라
+                                <span class="item__info__enTitle">Brownie Chocolate</span>
+                            </strong>
+                            <p class="item__info__text">깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료</p>
+                        </div>
+                        <dl class="main__item__healthInfo">
+                            <dt>칼로리</dt>
+                            <dd>(503kcal)</dd>
+                            <dt>포화지방</dt>
+                            <dd>(20.9g)</dd>
+                            <dt>당류</dt>
+                            <dd>(42g)</dd>
+                            <dt>나트륨</dt>
+                            <dd>(299mg)</dd>
+                            <dt>단백질</dt>
+                            <dd>(9g)</dd>
+                            <dt>카페인</dt>
+                            <dd>(12mg)</dd>
                         </dl>
-                        <table class="main__item__healthInfo">
-                            <tr>
-                                <th>칼로리</th>
-                                <td>(503kcal)</td>
-                                <th>포화지방</th>
-                                <td>(20.9g)</td>
-                            </tr>
-                            <tr>
-                                <th>당류</th>
-                                <td>(42g)</td>
-                                <th>나트륨</th>
-                                <td>(299mg)</td>
-                            </tr>
-                            <tr>
-                                <th>단백질</th>
-                                <td>(9g)</td>
-                                <th>카페인</th>
-                                <td>(12mg)</td>
-                            </tr>
-                        </table>
-                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                        <button class="main__item__btn btnClose" type="button">메뉴 상세보기 닫기</button>
                     </div>
                 </li>
                 <!-- Item - 제주청귤 오리지널 -->
@@ -220,33 +205,28 @@
                         </figure>
                     </a>
                     <div class="main__item--active main__item__detail isAct">
-                        <h3 class="a11y-hidden">제주청귤 오리지널 상세보기</h3>
-                        <dl class="main__item__info">
-                            <dt class="item__info__title">제주청귤 오리지널</dt>
-                            <dt class="item__info__enTitle">Jeju Green Tangerine Tea</dt>
-                            <dd class="item__info__text">청정 제주지역에서 자라난 귀한 청귤의 풍부한 과육을 맛볼 수 있는 새콤달콤한 홈메이드 스타일 과일차</dd>
+                        <h3 class="hidden">제주청귤 오리지널 상세보기</h3>
+                        <div class="main__item__info">
+                            <strong class="item__info__title">제주청귤 오리지널
+                                <span class="item__info__enTitle">Jeju Green Tangerine Tea</span>
+                            </strong>
+                            <p class="item__info__text">청정 제주지역에서 자라난 귀한 청귤의 풍부한 과육을 맛볼 수 있는 새콤달콤한 홈메이드 스타일 과일차</p>
+                        </div>
+                        <dl class="main__item__healthInfo">
+                            <dt>칼로리</dt>
+                            <dd>(218kcal)</dd>
+                            <dt>포화지방</dt>
+                            <dd>(0.1g)</dd>
+                            <dt>당류</dt>
+                            <dd>(51g)</dd>
+                            <dt>나트륨</dt>
+                            <dd>(4mg)</dd>
+                            <dt>단백질</dt>
+                            <dd>(0g)</dd>
+                            <dt>카페인</dt>
+                            <dd>(0mg)</dd>
                         </dl>
-                        <table class="main__item__healthInfo">
-                            <tr>
-                                <th>칼로리</th>
-                                <td>(218kcal)</td>
-                                <th>포화지방</th>
-                                <td>(0.1g)</td>
-                            </tr>
-                            <tr>
-                                <th>당류</th>
-                                <td>(51g)</td>
-                                <th>나트륨</th>
-                                <td>(4mg)</td>
-                            </tr>
-                            <tr>
-                                <th>단백질</th>
-                                <td>(0g)</td>
-                                <th>카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </table>
-                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                        <button class="main__item__btn btnClose" type="button">메뉴 상세보기 닫기</button>
                     </div>
                 </li>
                 <!-- Item - 제주청귤 블라썸 -->
@@ -258,33 +238,28 @@
                         </figure>
                     </a>
                     <div class="main__item--active main__item__detail isAct">
-                        <h3 class="a11y-hidden">제주청귤 블라썸 상세보기</h3>
-                        <dl class="main__item__info">
-                            <dt class="item__info__title">제주청귤 블라썸</dt>
-                            <dt class="item__info__enTitle">Jeju Green Tangerine Blossom</dt>
-                            <dd class="item__info__text">청귤의 새콤함이 복숭아, 포도 등의 다양한 과일향과 함께 어우러져 밸런스가 훌륭한 블렌딩티</dd>
+                        <h3 class="hidden">제주청귤 블라썸 상세보기</h3>
+                        <div class="main__item__info">
+                            <strong class="item__info__title">제주청귤 블라썸
+                                <span class="item__info__enTitle">Jeju Green Tangerine Blossom</span>
+                            </strong>
+                            <p class="item__info__text">청귤의 새콤함이 복숭아, 포도 등의 다양한 과일향과 함께 어우러져 밸런스가 훌륭한 블렌딩티</p>
+                        </div>
+                        <dl class="main__item__healthInfo">
+                            <dt>칼로리</dt>
+                            <dd>(202kcal)</dd>
+                            <dt>포화지방</dd>
+                            <dd>(0.1g)</dd>
+                            <dt>당류</dt>
+                            <dd>(46g)</dd>
+                            <dt>나트륨</dt>
+                            <dd>(5mg)</dd>
+                            <dt>단백질</dt>
+                            <dd>(1g)</dd>
+                            <dt>카페인</dt>
+                            <dd>(0mg)</dd>
                         </dl>
-                        <table class="main__item__healthInfo">
-                            <tr>
-                                <th>칼로리</th>
-                                <td>(202kcal)</td>
-                                <th>포화지방</th>
-                                <td>(0.1g)</td>
-                            </tr>
-                            <tr>
-                                <th>당류</th>
-                                <td>(46g)</td>
-                                <th>나트륨</th>
-                                <td>(5mg)</td>
-                            </tr>
-                            <tr>
-                                <th>단백질</th>
-                                <td>(1g)</td>
-                                <th>카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </table>
-                        <button class="btnClose" type="button"><span aria-hidden="true">메뉴 상세보기 닫기</span></button>
+                        <button class="main__item__btn btnClose" type="button"><span aria-hidden="true">메뉴 상세보기 닫기</span></button>
                     </div>
                 </li>
                 <!-- Item - 석류 오리지널 -->
@@ -296,33 +271,28 @@
                         </figure>
                     </a>
                     <div class="main__item--active main__item__detail isAct">
-                        <h3 class="a11y-hidden">석류 오리지널 상세보기</h3>
-                        <dl class="main__item__info">
-                            <dt class="item__info__title">석류 오리지널</dt>
-                            <dt class="item__info__enTitle">Pomegranate Tea</dt>
-                            <dd class="item__info__text">석류 특유의 산뜻한 향과 깔끔한 뒷맛이 느껴지며, 과육이 한알 한알 살아있는 붉은 빛의 매력적인 과일차</dd>
+                        <h3 class="hidden">석류 오리지널 상세보기</h3>
+                        <div class="main__item__info">
+                            <strong class="item__info__title">석류 오리지널
+                                <span class="item__info__enTitle">Pomegranate Tea</span>
+                            </strong>
+                            <p class="item__info__text">석류 특유의 산뜻한 향과 깔끔한 뒷맛이 느껴지며, 과육이 한알 한알 살아있는 붉은 빛의 매력적인 과일차</p>
+                        </div>
+                        <dl class="main__item__healthInfo">
+                            <dt>칼로리</dt>
+                            <dd>(210kcal)</dd>
+                            <dt>포화지방</dt>
+                            <dd>(0.1g)</dd>
+                            <dt>당류</dt>
+                            <dd>(42g)</dd>
+                            <dt>나트륨</dt>
+                            <dd>(5mg)</dd>
+                            <dt>단백질</dt>
+                            <dd>(0g)</dd>
+                            <dt>카페인</dt>
+                            <dd>(0mg)</dd>
                         </dl>
-                        <table class="main__item__healthInfo">
-                            <tr>
-                                <th>칼로리</th>
-                                <td>(210kcal)</td>
-                                <th>포화지방</th>
-                                <td>(0.1g)</td>
-                            </tr>
-                            <tr>
-                                <th>당류</th>
-                                <td>(42g)</td>
-                                <th>나트륨</th>
-                                <td>(5mg)</td>
-                            </tr>
-                            <tr>
-                                <th>단백질</th>
-                                <td>(0g)</td>
-                                <th>카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </table>
-                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                        <button class="main__item__btn btnClose" type="button">메뉴 상세보기 닫기</button>
                     </div>
                 </li>
                 <!-- Item - 석류 애플라임 -->
@@ -334,33 +304,28 @@
                         </figure>
                     </a>
                     <div class="main__item--active main__item__detail isAct">
-                        <h3 class="a11y-hidden">석류 애플라임 상세보기</h3>
-                        <dl class="main__item__info">
-                            <dt class="item__info__title">석류 애플라임</dt>
-                            <dt class="item__info__enTitle">Pomegranate Apple Lime</dt>
-                            <dd class="item__info__text">산뜻한 석류에 다양한 과일과 꽃, 그리고 샴페인의 향이 더해져 보다 깊고 중후한 맛이 느껴지는 블렌딩티</dd>
+                        <h3 class="hidden">석류 애플라임 상세보기</h3>
+                        <div class="main__item__info">
+                            <strong class="item__info__title">석류 애플라임
+                                <span class="item__info__enTitle">Pomegranate Apple Lime</span>
+                            </strong>
+                            <p class="item__info__text">산뜻한 석류에 다양한 과일과 꽃, 그리고 샴페인의 향이 더해져 보다 깊고 중후한 맛이 느껴지는 블렌딩티</p>
+                        </div>
+                        <dl class="main__item__healthInfo">
+                            <dt>칼로리</dt>
+                            <dd>(220kcal)</dd>
+                            <dt>포화지방</dt>
+                            <dd>(0.1g)</dd>
+                            <dt>당류</dt>
+                            <dd>(42g)</dd>
+                            <dt>나트륨</dt>
+                            <dd>(7mg)</dd>
+                            <dt>단백질</dt>
+                            <dd>(1g)</dd>
+                            <dt>카페인</dt>
+                            <dd>(0mg)</dd>
                         </dl>
-                        <table class="main__item__healthInfo">
-                            <tr>
-                                <th>칼로리</th>
-                                <td>(220kcal)</td>
-                                <th>포화지방</th>
-                                <td>(0.1g)</td>
-                            </tr>
-                            <tr>
-                                <th>당류</th>
-                                <td>(42g)</td>
-                                <th>나트륨</th>
-                                <td>(7mg)</td>
-                            </tr>
-                            <tr>
-                                <th>단백질</th>
-                                <td>(1g)</td>
-                                <th>카페인</th>
-                                <td>(0mg)</td>
-                            </tr>
-                        </table>
-                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                        <button class="main__item__btn btnClose" type="button">메뉴 상세보기 닫기</button>
                     </div>
                 </li>                 
             </ul>

@@ -6,11 +6,12 @@
     top: 0;
     right: 0;
     float: right;
-    margin: 22px;
+    margin: 18px;
+    z-index: 105;
 }
 .nav__content__item {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 1%;
     box-sizing: border-box;
 }
 .nav__content__item a {
