@@ -1,0 +1,111 @@
+
+/* main */
+.main__container {
+    margin-top: 120px;
+    padding:  0 40px;
+}
+.main__list {
+    margin-top: 100px;
+    min-width: 560px;
+    max-width: 840px;   
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+.main__item {
+    /* display: inline-block; */
+    background-color: #F5F5F5;
+    width: 49.3%;
+    height: 361px;
+    text-align: center;    
+    margin: 5px 0;
+    position: relative;
+}
+.main__item:nth-child(2n) {
+    float: right;
+}
+.main__item:nth-child(2n-1) {
+    float: left;
+}
+.main__item a {
+    display: block;
+    padding: 20px;
+}
+.main__item__figure {
+    width: 100%;
+}
+.main__item__figure img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.main__item__detail {
+    z-index: 10;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    height: 100%;
+}
+/* 제품 상세 detail */
+.main__item__detail {
+    padding:20px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.item__info__title{
+    font-size: 18px;
+    line-height: 26px;
+    display: block;
+    color:#202022;
+    padding-bottom: 16px;
+}
+.item__info__enTitle{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;    
+}
+.item__info__text {
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+    border-top:2px solid #202023;
+    padding-top: 14px;
+}
+.main__item__healthInfo {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    height: 92px;
+    background: #ffffff;   
+    width: 100%; 
+    font-size: 13px;
+    line-height: 19px;    
+    padding: 16px 0 16px 10%;
+}
+.main__item__healthInfo::after{
+    content: "";
+    display: inline-block;
+    top: 16px;
+    left: 50%;
+    position: absolute;
+    width: 1px;
+    height: 60px;
+    background-color: tomato;
+}
+.main__item__healthInfo dt, .main__item__healthInfo dd{
+    display:inline-block;
+    width: 24%;  
+}
+.main__item__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/detail-close.gif);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    overflow: hidden;
+}
