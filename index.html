@@ -7,50 +7,62 @@
     <title>ediya coffee</title>
 </head>
 <body>
-    <div class="">
+    <div class="wrap">
         <!-- Header -->
-        <header class="">
-            <h1>
-                <a href="#">
+        <header class="header">
+            <h1 class="logo">
+                <a href="#" class="logo__content">
                     <img src="./images/ediya-logo.gif" alt="Ediya Coffee">
                 </a>
             </h1>
         </header>
         <!-- Navigation -->
-        <nav class="container">
-            <h2 class="a11y-hidden">이디야의 카테고리</h2>
-            <button>
-                <span></span>
-                <span></span>
-                <span></span>
+        <nav class="navigation nav__content">
+            <h2 class="hidden">이디야의 카테고리</h2>
+            <button class="nav__content__btn navBtn">
+                <span class="btn__top"></span>
+                <span class="btn__middle"></span>
+                <span class="btn__bottom"></span>
             </button>
-            <ul>
-                <li><a href="#">메뉴</a></li>
-                <li><a href="#">이디야 멤버스</a></li>
-                <li><a href="#">이디야 커피랩</a></li>
-                <li><a href="#">이디야 컬쳐랩</a></li>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">매장찾기</a></li>
+            <ul class="nav__content__list">
+                <li class="nav__content__item">
+                    <a href="#">메뉴</a>
+                </li >
+                <li class="nav__content__item">
+                    <a href="#">이디야 멤버스</a>
+                </li>
+                <li class="nav__content__item">
+                    <a href="#">이디야 커피랩</a>
+                </li>
+                <li class="nav__content__item">
+                    <a href="#">이디야 컬쳐랩</a>
+                </li>
+                <li class="nav__content__item">
+                    <a href="#">공지사항</a>
+                </li>
+                <li class="nav__content__item">
+                    <a href="#">매장찾기</a>
+                </li>
             </ul>
         </nav>
-        <main class="">
-            <h2 class="a11y-hidden">이디야 메뉴</h2>
-            <ul>
-                <li>
+        <main class="main main__container">
+            <h2 class="hidden">이디야 메뉴</h2>
+            <ul class="main__list">
+                <li class="main__item">
                     <a href="#" title="ICED 벚꽃라떼">
-                        <figure>
+                        <figure class="main__item__">
                             <img src="/" alt="ICED 벚꽃라떼">
                             <figcation>ICED 벚꽃라떼</figcation>
                         </figure>
                     </a>
-                    <div class="">
+                    <div class="main__item--active main__item__detail itemAct">
                         <h3 class="a11y-hidden">ICED 벚꽃라떼 상세보기</h3>
-                        <dl>
-                            <dt>ICED 벚꽃라떼</dt>
-                            <dt>Cherry Blossom Latte</dt>
-                            <dd>은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                        <dl class="main__item__info">
+                            <dt class="item__info__title">ICED 벚꽃라떼</dt>
+                            <dt class="item__info__enTitle">Cherry Blossom Latte</dt>
+                            <dd class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
                         </dl>
-                        <table>
+                        <table class="main__item__healthInfo">
                             <tr>
                                 <th>칼로리</th>
                                 <td>(393kcal)</td>
@@ -70,44 +82,268 @@
                                 <td>(0mg)</td>
                             </tr>
                         </table>
-                        <button type="button">메뉴 상세보기 닫기</button>
+                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
                     </div>
                 </li>
-                <li>
-                    <a href="#">
-
+                <li class="main__item">
+                    <a href="#" title="ICED 벚꽃라떼">
+                        <figure class="main__item__">
+                            <img src="/" alt="ICED 벚꽃라떼">
+                            <figcation>ICED 벚꽃라떼</figcation>
+                        </figure>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-
+                    <div class="main__item--active main__item__detail isAct">
+                        <h3 class="a11y-hidden">ICED 벚꽃라떼 상세보기</h3>
+                        <dl class="main__item__info">
+                            <dt class="item__info__title">ICED 벚꽃라떼</dt>
+                            <dt class="item__info__enTitle">Cherry Blossom Latte</dt>
+                            <dd class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                        </dl>
+                        <table class="main__item__healthInfo">
+                            <tr>
+                                <th>칼로리</th>
+                                <td>(393kcal)</td>
+                                <th>포화지방</th>
+                                <td>(18.6g)</td>
+                            </tr>
+                            <tr>
+                                <th>당류</th>
+                                <td>(35g)</td>
+                                <th>나트륨</th>
+                                <td>(149mg)</td>
+                            </tr>
+                            <tr>
+                                <th>단백질</th>
+                                <td>(7g)</td>
+                                <th>카페인</th>
+                                <td>(0mg)</td>
+                            </tr>
+                        </table>
+                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                    </div>
+                </li> 
+                <li class="main__item">
+                    <a href="#" title="ICED 벚꽃라떼">
+                        <figure class="main__item__">
+                            <img src="/" alt="ICED 벚꽃라떼">
+                            <figcation>ICED 벚꽃라떼</figcation>
+                        </figure>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-
+                    <div class="main__item--active main__item__detail isAct">
+                        <h3 class="a11y-hidden">ICED 벚꽃라떼 상세보기</h3>
+                        <dl class="main__item__info">
+                            <dt class="item__info__title">ICED 벚꽃라떼</dt>
+                            <dt class="item__info__enTitle">Cherry Blossom Latte</dt>
+                            <dd class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                        </dl>
+                        <table class="main__item__healthInfo">
+                            <tr>
+                                <th>칼로리</th>
+                                <td>(393kcal)</td>
+                                <th>포화지방</th>
+                                <td>(18.6g)</td>
+                            </tr>
+                            <tr>
+                                <th>당류</th>
+                                <td>(35g)</td>
+                                <th>나트륨</th>
+                                <td>(149mg)</td>
+                            </tr>
+                            <tr>
+                                <th>단백질</th>
+                                <td>(7g)</td>
+                                <th>카페인</th>
+                                <td>(0mg)</td>
+                            </tr>
+                        </table>
+                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                    </div>
+                </li> 
+                <li class="main__item">
+                    <a href="#" title="ICED 벚꽃라떼">
+                        <figure class="main__item__">
+                            <img src="/" alt="ICED 벚꽃라떼">
+                            <figcation>ICED 벚꽃라떼</figcation>
+                        </figure>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-
+                    <div class="main__item--active main__item__detail isAct">
+                        <h3 class="a11y-hidden">ICED 벚꽃라떼 상세보기</h3>
+                        <dl class="main__item__info">
+                            <dt class="item__info__title">ICED 벚꽃라떼</dt>
+                            <dt class="item__info__enTitle">Cherry Blossom Latte</dt>
+                            <dd class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                        </dl>
+                        <table class="main__item__healthInfo">
+                            <tr>
+                                <th>칼로리</th>
+                                <td>(393kcal)</td>
+                                <th>포화지방</th>
+                                <td>(18.6g)</td>
+                            </tr>
+                            <tr>
+                                <th>당류</th>
+                                <td>(35g)</td>
+                                <th>나트륨</th>
+                                <td>(149mg)</td>
+                            </tr>
+                            <tr>
+                                <th>단백질</th>
+                                <td>(7g)</td>
+                                <th>카페인</th>
+                                <td>(0mg)</td>
+                            </tr>
+                        </table>
+                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                    </div>
+                </li> 
+                <li class="main__item">
+                    <a href="#" title="ICED 벚꽃라떼">
+                        <figure class="main__item__">
+                            <img src="/" alt="ICED 벚꽃라떼">
+                            <figcation>ICED 벚꽃라떼</figcation>
+                        </figure>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-
+                    <div class="main__item--active main__item__detail isAct">
+                        <h3 class="a11y-hidden">ICED 벚꽃라떼 상세보기</h3>
+                        <dl class="main__item__info">
+                            <dt class="item__info__title">ICED 벚꽃라떼</dt>
+                            <dt class="item__info__enTitle">Cherry Blossom Latte</dt>
+                            <dd class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                        </dl>
+                        <table class="main__item__healthInfo">
+                            <tr>
+                                <th>칼로리</th>
+                                <td>(393kcal)</td>
+                                <th>포화지방</th>
+                                <td>(18.6g)</td>
+                            </tr>
+                            <tr>
+                                <th>당류</th>
+                                <td>(35g)</td>
+                                <th>나트륨</th>
+                                <td>(149mg)</td>
+                            </tr>
+                            <tr>
+                                <th>단백질</th>
+                                <td>(7g)</td>
+                                <th>카페인</th>
+                                <td>(0mg)</td>
+                            </tr>
+                        </table>
+                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                    </div>
+                </li> 
+                <li class="main__item">
+                    <a href="#" title="ICED 벚꽃라떼">
+                        <figure class="main__item__">
+                            <img src="/" alt="ICED 벚꽃라떼">
+                            <figcation>ICED 벚꽃라떼</figcation>
+                        </figure>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-
+                    <div class="main__item--active main__item__detail isAct">
+                        <h3 class="a11y-hidden">ICED 벚꽃라떼 상세보기</h3>
+                        <dl class="main__item__info">
+                            <dt class="item__info__title">ICED 벚꽃라떼</dt>
+                            <dt class="item__info__enTitle">Cherry Blossom Latte</dt>
+                            <dd class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                        </dl>
+                        <table class="main__item__healthInfo">
+                            <tr>
+                                <th>칼로리</th>
+                                <td>(393kcal)</td>
+                                <th>포화지방</th>
+                                <td>(18.6g)</td>
+                            </tr>
+                            <tr>
+                                <th>당류</th>
+                                <td>(35g)</td>
+                                <th>나트륨</th>
+                                <td>(149mg)</td>
+                            </tr>
+                            <tr>
+                                <th>단백질</th>
+                                <td>(7g)</td>
+                                <th>카페인</th>
+                                <td>(0mg)</td>
+                            </tr>
+                        </table>
+                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                    </div>
+                </li> 
+                <li class="main__item">
+                    <a href="#" title="ICED 벚꽃라떼">
+                        <figure class="main__item__">
+                            <img src="/" alt="ICED 벚꽃라떼">
+                            <figcation>ICED 벚꽃라떼</figcation>
+                        </figure>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-
+                    <div class="main__item--active main__item__detail isAct">
+                        <h3 class="a11y-hidden">ICED 벚꽃라떼 상세보기</h3>
+                        <dl class="main__item__info">
+                            <dt class="item__info__title">ICED 벚꽃라떼</dt>
+                            <dt class="item__info__enTitle">Cherry Blossom Latte</dt>
+                            <dd class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                        </dl>
+                        <table class="main__item__healthInfo">
+                            <tr>
+                                <th>칼로리</th>
+                                <td>(393kcal)</td>
+                                <th>포화지방</th>
+                                <td>(18.6g)</td>
+                            </tr>
+                            <tr>
+                                <th>당류</th>
+                                <td>(35g)</td>
+                                <th>나트륨</th>
+                                <td>(149mg)</td>
+                            </tr>
+                            <tr>
+                                <th>단백질</th>
+                                <td>(7g)</td>
+                                <th>카페인</th>
+                                <td>(0mg)</td>
+                            </tr>
+                        </table>
+                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                    </div>
+                </li> 
+                <li class="main__item">
+                    <a href="#" title="ICED 벚꽃라떼">
+                        <figure class="main__item__">
+                            <img src="/" alt="ICED 벚꽃라떼">
+                            <figcation>ICED 벚꽃라떼</figcation>
+                        </figure>
                     </a>
-                </li>
+                    <div class="main__item--active main__item__detail isAct">
+                        <h3 class="a11y-hidden">ICED 벚꽃라떼 상세보기</h3>
+                        <dl class="main__item__info">
+                            <dt class="item__info__title">ICED 벚꽃라떼</dt>
+                            <dt class="item__info__enTitle">Cherry Blossom Latte</dt>
+                            <dd class="item__info__text">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                        </dl>
+                        <table class="main__item__healthInfo">
+                            <tr>
+                                <th>칼로리</th>
+                                <td>(393kcal)</td>
+                                <th>포화지방</th>
+                                <td>(18.6g)</td>
+                            </tr>
+                            <tr>
+                                <th>당류</th>
+                                <td>(35g)</td>
+                                <th>나트륨</th>
+                                <td>(149mg)</td>
+                            </tr>
+                            <tr>
+                                <th>단백질</th>
+                                <td>(7g)</td>
+                                <th>카페인</th>
+                                <td>(0mg)</td>
+                            </tr>
+                        </table>
+                        <button class="btnClose" type="button">메뉴 상세보기 닫기</button>
+                    </div>
+                </li>                 
             </ul>
         </main>
     </div>
