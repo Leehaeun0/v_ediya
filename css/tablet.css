@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-/* nav */
-
-/* main */
-.main__list {
-    margin-top: 100px;
-    min-width: 560px;
-    max-width: 840px;   
-    margin: 0 auto;
-    overflow: hidden;
-    z-index: 1;
-}
-.main__item {
-    /* display: inline-block; */
-    background-color: #F5F5F5;
-    width: 49.1%;
-    height: 361px;
-    text-align: center;    
-    margin: 7.5px 0;
-    position: relative;
-}
-.main__item:nth-child(2n) {
-    float: right;
-}
-.main__item:nth-child(2n-1) {
-    float: left;
-}
-.main__item a {
-    display: block;
-    padding: 20px;
-=======
 /* Navigation */
 /* nav btn */
 .nav__content__btn {
@@ -40,7 +9,6 @@
     width: 67px;
     height: 67px;
     z-index: 200;
->>>>>>> d9e1466a4a7be593d8299924ba8d02bfb43671e8
 }
 .nav__content__btn:hover {
     background-color: #f1f1f1;
@@ -81,19 +49,8 @@
     z-index: 150;
     transform: translateX(-110%);
 }
-<<<<<<< HEAD
-/* 제품 상세 detail */
-.main__item__detail {
-    /* box-sizing: border-box; */
-    padding:20px;
-    text-align: left;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgb(228, 228, 228);
-    display: none;
-=======
 .nav__content__item {
     border-bottom: 1px solid rgba(33, 55, 120, 0.5);
->>>>>>> d9e1466a4a7be593d8299924ba8d02bfb43671e8
 }
 .nav__content__item a {
     display: block;
