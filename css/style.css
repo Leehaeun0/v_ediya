@@ -30,7 +30,7 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, .6);
 }
 .header .logo {
@@ -71,24 +71,29 @@ html, body {
 }
 .main__item a {
     display: block;
+    width: 100%;
+    height: 100%;
     padding: 20px;
 }
 .main__item__figure {
     width: 100%;
 }
 .main__item__figure img {
-    width: 73%;
-    height: 273px;
-    display: block;
-    margin: 0 auto;
-    transition: all ease 1s;
+    width: 274px;
+    height: auto;
+    /* display: block; */
+    /* margin: 0 auto; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all ease .6s;
 }
 .main__item__figure img:hover {
-    transform: scale(1.2);
+    transform: translateX(-50%) scale(1.09);
 }
 figcaption {
     font-size: 1.8rem;
-    padding-top: 15px;
+    padding-top: 287px;
 }
 .main__item__detail {
     z-index: 10;
@@ -103,6 +108,7 @@ figcaption {
     text-align: left;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgb(228, 228, 228);
+    display:none;
 }
 .item__info__title {
     font-size: 1.8rem;
@@ -168,8 +174,9 @@ figcaption {
 .item__info__enTitle {
     font-weight: normal;
 }
-
-
+.itemAct {
+    display: block !important;
+}
 
 
 /* keyframe */
@@ -184,14 +191,14 @@ figcaption {
 }
 .header {
     animation-name: headerAni;
-    animation-duration: 700ms;
-    animation-fill-mode: forwards;
-    animation-delay: 0ms;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    transition-timing-function: ease-in;
 }
 /* Logo - Animation */
 @keyframes logoAni{
     0% {
-        transform: translate(-110%, 0);
+        transform: translate(-105%, 0);
         opacity: 0;
     }
     100% {
@@ -201,15 +208,14 @@ figcaption {
 }
 .logo {
     animation-name: logoAni;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 700ms;
-    transform: translateX(-110%);
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-delay: 800ms;
 }
 /* navigation - Animation */
 @keyframes navAni{
     0% {
-        transform: translate(110%, 0);
+        transform: translate(105%, 0);
         opacity: 0;
     }
     100% {
@@ -217,12 +223,11 @@ figcaption {
         opacity: 1;
     }
 }
-.navBtn {
+.nav__content__btn {
     animation-name: navAni;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 700ms;
-    transform: translateX(110%);
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-delay: 800ms;
 }
 /* item - Animation */
 @keyframes itemAni{
@@ -237,10 +242,23 @@ figcaption {
 }
 .main__item {
     animation-name: itemAni;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    /* animation-delay: 1000ms; */
-    transform: translateY(1500%);
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    transition-timing-function: ease-in;
+}
+/* detail -Animation */
+@keyframes detailAni{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.main__item__detail {
+    animation-name: detailAni;
+    animation-duration: 1200ms;
+    animation-fill-mode: both;
 }
 .main__item:nth-child(1) {
     animation-delay: 1000ms;
