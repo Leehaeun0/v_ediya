@@ -21,3 +21,24 @@
     color: #000;
     font-size: 1.6rem;
 }
+.nav__content__item a:hover {
+    color: #737373;
+}
+/* navigation - Animation */
+@keyframes navAni{
+    0% {
+        transform: translate(110%, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.nav__content__list {
+    animation-name: navAni;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 700ms;
+    transform: translateX(110%);
+}
