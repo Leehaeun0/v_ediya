@@ -175,14 +175,9 @@ figcaption {
 .item__info__enTitle {
     font-weight: normal;
 }
-<<<<<<< HEAD
-
-
-=======
 .itemAct {
     display: block !important;
 }
->>>>>>> 9f8cd887891ffa8ee9704182aae24c86c4e0dfba
 
 
 /* keyframe */
@@ -229,11 +224,7 @@ figcaption {
         opacity: 1;
     }
 }
-<<<<<<< HEAD
-.navBtn {
-=======
 .nav__content__btn {
->>>>>>> 9f8cd887891ffa8ee9704182aae24c86c4e0dfba
     animation-name: navAni;
     animation-duration: 300ms;
     animation-fill-mode: both;

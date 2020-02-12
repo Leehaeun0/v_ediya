@@ -114,12 +114,9 @@
     z-index: 150;
     transform: translateX(-110%);
 }
-<<<<<<< HEAD
-=======
 .navBtn+.nav__content__list {
     transform: none;
 }
->>>>>>> 9f8cd887891ffa8ee9704182aae24c86c4e0dfba
 .nav__content__item {
     border-bottom: 1px solid rgba(33, 55, 120, 0.5);
 }
