@@ -1,6 +1,9 @@
 .wrap {
     background-color: lime;
 }
+.nav__content__list{
+    /* transform: translate(-100%); */
+}
 /* main */
 .main__list {
     margin-top: 100px;

@@ -83,7 +83,7 @@ body {
     transform: translateY(-100%);
 }
 /* nav btn js */
-/* .navBtn span{
+.navBtn span{
     background-color: #fff;
 }
 .btn__nav{
@@ -100,7 +100,7 @@ body {
 .navBtn .btn__bottom {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
-} */
+}
 
 /* nav list */
 .nav__content__list {
@@ -125,6 +125,9 @@ body {
 .nav__content__item:hover {
     background-color: #2E437C;
 }
+.navBtn+.nav__content__list{
+    transform: none;
+}
 /* main */
 .main__container {
     margin-top: 120px;
@@ -133,4 +136,8 @@ body {
 /* main item detail */
 .item__info__enTitle{
     font-weight: normal;
+}
+
+.itemAct{
+    display: block !important;
 }
