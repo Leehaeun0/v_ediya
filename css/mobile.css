@@ -18,10 +18,6 @@
 .main__item__figure {
     width: 100%;
 }
-.main__item__figure img {
-    max-width: 100%;
-    width: 100%;
-}
 .main__item {
     margin-bottom: 20px;
 }

@@ -27,7 +27,7 @@
 /* navigation - Animation */
 @keyframes navAni{
     0% {
-        transform: translate(110%, 0);
+        transform: translate(20%, 0);
         opacity: 0;
     }
     100% {
@@ -37,8 +37,7 @@
 }
 .nav__content__list {
     animation-name: navAni;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-delay: 700ms;
-    transform: translateX(110%);
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    animation-delay: 800ms;
 }

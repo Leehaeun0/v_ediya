@@ -39,6 +39,71 @@
     top: 100%;
     transform: translateY(-100%);
 }
+.navBtn span{
+    background-color: #fff;
+}
+
+/* 하은 수정 */
+.btn__nav{
+    overflow: hidden;
+}
+.navBtn{
+    background-color: transparent;
+}
+.navBtn:hover{
+    background-color: #2E437C;
+}
+
+.navBtn .btn__top {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    animation-name:btn__topAni;
+    animation-duration: 250ms;
+    animation-fill-mode: both;
+    transition-timing-function: ease-out;
+}
+.navBtn .btn__middle {
+    top: 50%;
+    transform: translate(-110%, -50%);
+    animation-name:btn__middleAni;
+    animation-duration: 250ms;
+    animation-fill-mode: both;
+    transition-timing-function: ease-out;
+}
+.navBtn .btn__bottom {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    animation-name:btn__bottomAni;
+    animation-duration: 250ms;
+    animation-fill-mode: both;
+    transition-timing-function: ease-out;
+}
+@keyframes btn__topAni {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%) rotate(45deg);
+    }
+}
+@keyframes btn__middleAni {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translate(-110%, -50%);
+    }
+}
+@keyframes btn__bottomAni {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
+/* 하은 수정 */
+
 /* nav list */
 .nav__content__list {
     background-color: rgba(11, 18, 40, 0.9);
@@ -49,6 +114,12 @@
     z-index: 150;
     transform: translateX(-110%);
 }
+<<<<<<< HEAD
+=======
+.navBtn+.nav__content__list {
+    transform: none;
+}
+>>>>>>> 9f8cd887891ffa8ee9704182aae24c86c4e0dfba
 .nav__content__item {
     border-bottom: 1px solid rgba(33, 55, 120, 0.5);
 }
@@ -59,6 +130,6 @@
     font-size: 16px;
     padding-left: 16px;
 }
-.nav__content__item:hover {
+.nav__content__item a:hover, .nav__content__item a:focus {
     background-color: #2E437C;
 }

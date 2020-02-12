@@ -32,8 +32,7 @@ for(let i=0; i<items.length; i++) {
 //     }
 // }
 for(let i=0; i<mainBtn.length; i++) {
-    mainBtn[i].addEventListener('click', function(e) { 
-        // e.preventDefault();       
+    mainBtn[i].addEventListener('click', function(e) {        
         e.stopPropagation();
         let _this = e.target;   
         let _parent = _this.parentNode;    
