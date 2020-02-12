@@ -45,7 +45,7 @@ html, body {
 /* main */
 .main__container {
     margin-top: 100px;
-    padding:  0 40px 70px;
+    padding:  0 5% 70px;
 }
 .main__list {
     margin-top: 100px;
@@ -88,6 +88,7 @@ html, body {
 }
 figcaption {
     font-size: 1.8rem;
+    padding-top: 15px;
 }
 .main__item__detail {
     z-index: 10;
