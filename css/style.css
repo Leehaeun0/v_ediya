@@ -79,17 +79,18 @@ html, body {
     width: 100%;
 }
 .main__item__figure img {
-    width: 274px;
+    width: 295px;
     height: auto;
     /* display: block; */
     /* margin: 0 auto; */
     position: absolute;
+    top: 11px;
     left: 50%;
     transform: translateX(-50%);
-    transition: all ease .6s;
+    transition: all ease .5s;
 }
 .main__item__figure img:hover {
-    transform: translateX(-50%) scale(1.09);
+    transform: translateX(-50%) scale(1.08);
 }
 figcaption {
     font-size: 1.8rem;
@@ -161,7 +162,7 @@ figcaption {
     right: 0;
     height: 50px;
     width: 50px;
-    background-image: url(../images/detail-close.gif);
+    background-image: url(../images/detail-close.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     text-indent: -200px;

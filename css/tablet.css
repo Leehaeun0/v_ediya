@@ -42,21 +42,68 @@
 .navBtn span{
     background-color: #fff;
 }
+
+/* 하은 수정 */
 .btn__nav{
     overflow: hidden;
 }
-.navBtn .btn__top{
+.navBtn{
+    background-color: transparent;
+}
+.navBtn:hover{
+    background-color: #2E437C;
+}
+
+.navBtn .btn__top {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
+    animation-name:btn__topAni;
+    animation-duration: 250ms;
+    animation-fill-mode: both;
+    transition-timing-function: ease-out;
 }
 .navBtn .btn__middle {
     top: 50%;
     transform: translate(-110%, -50%);
+    animation-name:btn__middleAni;
+    animation-duration: 250ms;
+    animation-fill-mode: both;
+    transition-timing-function: ease-out;
 }
 .navBtn .btn__bottom {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
+    animation-name:btn__bottomAni;
+    animation-duration: 250ms;
+    animation-fill-mode: both;
+    transition-timing-function: ease-out;
 }
+@keyframes btn__topAni {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%) rotate(45deg);
+    }
+}
+@keyframes btn__middleAni {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translate(-110%, -50%);
+    }
+}
+@keyframes btn__bottomAni {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}
+/* 하은 수정 */
+
 /* nav list */
 .nav__content__list {
     background-color: rgba(11, 18, 40, 0.9);
