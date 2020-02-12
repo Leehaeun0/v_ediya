@@ -1,28 +1,36 @@
+<<<<<<< HEAD
 .wrap {
     background-color: lime;
 }
 .nav__content__list{
     /* transform: translate(-100%); */
 }
+=======
+>>>>>>> d9e1466a4a7be593d8299924ba8d02bfb43671e8
 /* main */
 .main__list {
-    margin-top: 100px;
     min-width: 200px;
     max-width: 400px;   
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 .main__item {
     background-color: #F5F5F5;
     width: 100%;
     height: 361px;
     text-align: center;    
-    margin: 10px;
+    margin: 0px;
+}
+.main__item a {
+    padding: 20px 0;
 }
 .main__item__figure {
     width: 100%;
 }
 .main__item__figure img {
-    display: block;
     max-width: 100%;
+    width: 100%;
+}
+.main__item {
+    margin-bottom: 20px;
 }
