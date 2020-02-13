@@ -20,10 +20,10 @@ html, body {
     overflow: hidden;
     clip: rect(0,0,0,0); 
 }
-.offscreen {
+/* .offscreen {
     position: absolute;
     top: -1000px;
-}
+} */
 /* 공통 모듈화 */
 /* Header */
 .header {
