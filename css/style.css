@@ -96,8 +96,6 @@ html, body {
 .main__item__figure img {
     width: 295px;
     height: auto;
-    /* display: block; */
-    /* margin: 0 auto; */
     position: absolute;
     top: 11px;
     left: 50%;
@@ -111,20 +109,19 @@ figcaption {
     font-size: 1.8rem;
     padding-top: 287px;
 }
+
+/* 제품 상세 detail */
+
 .main__item__detail {
     z-index: 10;
     position: absolute;
-    z-index: 10;
     top: 0;
     height: 100%;
-}
-/* 제품 상세 detail */
-.main__item__detail {
     padding:20px;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgb(228, 228, 228);
-    display:none;
+    display: none;
 }
 .item__info__title {
     font-size: 1.8rem;
@@ -215,8 +212,35 @@ figcaption {
     display: block !important;
 }
 
-
 /* keyframe */
+/* detail - Animation */
+@keyframes btnA{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.itemAct {
+    animation-name: btnA;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+    display: block;
+}
+@keyframes btnB{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.visualHidden{
+    animation-name: btnB;
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+}
 /* Header - Animation */
 @keyframes headerAni{
     0% {
@@ -284,7 +308,7 @@ figcaption {
     transition-timing-function: ease-in;
 }
 /* detail -Animation */
-@keyframes detailAni{
+/* @keyframes detailAni{
     0% {
         opacity: 0;
     }
@@ -296,7 +320,7 @@ figcaption {
     animation-name: detailAni;
     animation-duration: 1200ms;
     animation-fill-mode: both;
-}
+} */
 .main__item:nth-child(1) {
     animation-delay: 1000ms;
 }
