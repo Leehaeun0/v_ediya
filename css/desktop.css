@@ -21,8 +21,8 @@
     color: #000;
     font-size: 1.6rem;
 }
-.nav__content__item a:hover {
-    color: #737373;
+.nav__content__item a:hover, .nav__content__item a:focus {
+    color: rgb(124, 124, 124);
 }
 /* navigation - Animation */
 @keyframes navAni{

@@ -1,12 +1,13 @@
-const nav = document.querySelector('.nav__content');
-const navBtn = nav.querySelector('.nav__content__btn');
+var nav = document.getElementsByClassName('nav__content')[0];
+var navBtn = nav.getElementsByClassName('nav__content__btn')[0];
 
-const items = document.querySelectorAll('.main__item');
-const detail = document.querySelectorAll('.main__item__detail');
-const mainBtn = document.querySelectorAll('.main__item__btn');
+var items = document.getElementsByClassName('main__item');
+var detail = document.getElementsByClassName('main__item__detail');
+var mainBtn = document.getElementsByClassName('main__item__btn');
 
 function navOC(e) {
     e.preventDefault();
+	
     if(!(navBtn.classList.contains('navBtn'))) {
         navBtn.classList.add('navBtn');
        
@@ -15,9 +16,12 @@ function navOC(e) {
         navBtn.classList.remove('navBtn');              
     }
 }
-for(let i=0; i<items.length; i++) {
+
+for(var i=0; i<items.length; i++) {
+	
     items[i].addEventListener('click', function() {
-        detail[i].classList.add('itemAct');
+        //detail[i].classList.add('itemAct');
+		this.getElementsByClassName('main__item__detail')[0].classList.add('itemAct');
     });  
                
 }
@@ -25,18 +29,18 @@ for(let i=0; i<items.length; i++) {
 
 // function close(e) {
 //     e.stopPropagation();
-//     let _this = e.target;   
-//     let _parent = _this.parentNode;    
+//     var _this = e.target;   
+//     var _parent = _this.parentNode;    
 //     if(_parent.classList.contains('itemAct')) {
 //         _parent.classList.remove('itemAct');
 //     }
 // }
-for(let i=0; i<mainBtn.length; i++) {
+for(var i=0; i<mainBtn.length; i++) {
     mainBtn[i].addEventListener('click', function(e) { 
         // e.preventDefault();       
         e.stopPropagation();
-        let _this = e.target;   
-        let _parent = _this.parentNode;    
+        var _this = e.target;   
+        var _parent = _this.parentNode;    
         if(_parent.classList.contains('itemAct')) {
             _parent.classList.remove('itemAct');
         }

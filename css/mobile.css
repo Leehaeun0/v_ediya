@@ -8,6 +8,8 @@
 .main__item {
     background-color: #F5F5F5;
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     height: 361px;
     text-align: center;    
     margin: 0px;
@@ -19,5 +21,5 @@
     width: 100%;
 }
 .main__item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }

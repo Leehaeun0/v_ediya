@@ -60,8 +60,23 @@ html, body {
     width: 49.1%;
     height: 361px;
     text-align: center;    
-    margin: 7.5px 0;
+    margin-bottom: 15px;
     position: relative;
+}
+@media (max-width: 840px) {
+    .main__item{
+        width: 48.94%;
+    }
+}
+@media (max-width: 710px) {
+    .main__item{
+        width: 48.75%;
+    }
+}
+@media (max-width: 610px) {
+    .main__item{
+        width: 48.7%;
+    }
 }
 .main__item:nth-child(2n) {
     float: right;
@@ -152,9 +167,30 @@ figcaption {
     height: 60px;
     background-color: #999999;
 }
-.main__item__healthInfo dt, .main__item__healthInfo dd {
+.main__item__healthInfo dt{
     display:inline-block;
+    min-width: 24%;  
+    /* background-color: green; */
+}
+.main__item__healthInfo dd {
+    display: inline-block;
     width: 24%;  
+    /* background-color: tomato; */
+}
+@media (max-width: 800px) {
+    .main__item__healthInfo{
+        padding-left: 9%;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 700px) {
+    .main__item__healthInfo{
+        padding-left: 7%;
+        font-size: 1.1rem;
+    }
+    .main__item__healthInfo dt{
+        min-width: 23%;
+    }
 }
 .main__item__btn {
     position: absolute;
