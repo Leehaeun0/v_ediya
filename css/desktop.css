@@ -18,8 +18,8 @@
 }
 .nav__content__item a {
     display: block;
-    color: #000;
-    font-size: 1.6rem;
+    color: inherit;
+    font-size: inherit;
 }
 .nav__content__item a:hover, .nav__content__item a:focus {
     color: rgb(124, 124, 124);

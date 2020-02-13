@@ -21,8 +21,6 @@ html, body {
     clip: rect(0,0,0,0);
 }
 /* 공통 모듈화 */
-
-
 /* Header */
 .header {
     z-index: 100;
@@ -41,8 +39,13 @@ html, body {
     display: block;
     padding: 0 4px;
 }
-
-/* main */
+/* Nav */
+.nav__content__item h3 {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+/* Main */
 .main__container {
     margin-top: 100px;
     padding:  0 5% 70px;
@@ -109,9 +112,7 @@ figcaption {
     font-size: 1.8rem;
     padding-top: 287px;
 }
-
 /* 제품 상세 detail */
-
 .main__item__detail {
     z-index: 10;
     position: absolute;
@@ -167,12 +168,10 @@ figcaption {
 .main__item__healthInfo dt{
     display:inline-block;
     min-width: 24%;  
-    /* background-color: green; */
 }
 .main__item__healthInfo dd {
     display: inline-block;
     width: 24%;  
-    /* background-color: tomato; */
 }
 @media (max-width: 800px) {
     .main__item__healthInfo{
@@ -211,7 +210,6 @@ figcaption {
 .itemAct {
     display: block !important;
 }
-
 /* keyframe */
 /* detail - Animation */
 @keyframes btnA{
@@ -307,20 +305,6 @@ figcaption {
     animation-fill-mode: both;
     transition-timing-function: ease-in;
 }
-/* detail -Animation */
-/* @keyframes detailAni{
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-.main__item__detail {
-    animation-name: detailAni;
-    animation-duration: 1200ms;
-    animation-fill-mode: both;
-} */
 .main__item:nth-child(1) {
     animation-delay: 1000ms;
 }
